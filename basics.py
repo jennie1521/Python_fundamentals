@@ -162,3 +162,24 @@ def grades(marks):
 grades(78);
 grades(95);
 grades(30);
+
+# find if a number is 2 digit number
+def is_two_digit_num(num):
+    if num>=10 and num<=99:
+        print("This is two digit number")
+    else:
+        print("Not a two digit number")
+is_two_digit_num(0);
+is_two_digit_num(56);
+is_two_digit_num(100);
+
+#find whether a charcter is uppercase or lowercase
+def check_case(char):
+    if len(char)==1 and char.isalpha():
+        if char.islower():
+            print("Lowercase character")
+        elif char.isupper():
+            print("Uppercase character")
+check_case('A');
+check_case('f');
+check_case('Z');
