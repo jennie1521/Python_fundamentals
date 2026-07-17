@@ -215,3 +215,64 @@ n=5
 for i in range(2,n+1):
     fact=fact*i
 print(fact)
+
+#perform operations
+def numbers(a,b):
+    sum=a+b
+    print(sum)
+
+    subtract=a-b
+    print(subtract)
+
+    multiply=a*b
+    print(multiply)
+
+    division=a/b
+    print(division)
+
+    reminder=a%b
+    print(reminder)
+
+    power=a**b
+    print(power)
+
+numbers(20,3);
+
+#check whether two numbers are equal
+def chcek_equal(a,b):
+    if a==b:
+        print("Equal")
+    else:
+        print("Not Equal")
+chcek_equal(20,20);
+chcek_equal(40,30);  
+
+#count number of vowels
+text="I am Janvi Yadav"
+count=0
+for char in text.lower():
+    if char in 'aeiou':
+        count+=1
+print(count)
+
+#count number of consonant
+text="I am Janvi Yadav"
+count=0
+for char in text.lower():
+    if char not in 'aeiou':
+        count+=1
+print(count) 
+
+#reverse a string 
+str="Hey, how much is this."
+print(str[::-1]) 
+
+#check whether a string is palindrome
+str="appa"
+str1=str[::-1]
+if str==str1:
+    print("This is palindrome")
+
+#count spaces in a string
+str="Janvi is beautiful girl in her family."
+print(str.count(" "))
