@@ -335,3 +335,18 @@ text="Janvi"
 text1=text[1::2]
 for ch in text1:
     print(ch) 
+
+#indexing print first character
+s="Python"
+print(s[0])
+print(s[-1])
+print(s[2])
+print(s[-2])
+
+#every character using loop
+for ch in s:
+    print(ch)
+
+#every character from right to left
+for ch in s:
+    print(ch[::-1])
