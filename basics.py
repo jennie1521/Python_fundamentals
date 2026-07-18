@@ -304,3 +304,34 @@ print(count)
 #remove all spaces
 text="My mane is Janvi Kundan Yadav and my age is 21."
 print(text.replace(" ",""))
+
+# check whether a string is a substring of another
+text="Python Programming."
+print(text.find("Python"))
+print(text.find("Programming"))
+print(text.find("Java"))
+
+#compare two strings
+text="Janvi Yadav"
+text2="Janvi"
+if text==text2:
+    print("Same")
+else:
+    print("Not same")
+
+#print every character on a new line
+text="Janvi"
+for ch in text:
+    print(ch) 
+
+#print every character at even indexes
+text="Janvi"
+text1=text[::2]
+for ch in text1:
+    print(ch)  
+
+#print every character at add indexes
+text="Janvi"
+text1=text[1::2]
+for ch in text1:
+    print(ch) 
