@@ -276,3 +276,31 @@ if str==str1:
 #count spaces in a string
 str="Janvi is beautiful girl in her family."
 print(str.count(" "))
+
+#count digits in a string
+text="My mane is janvi kundan yadav and my age is 21."
+count=0
+for ch in text:
+    if ch.isdigit():
+        count+=1
+print(count)
+
+#count uppercase letters
+text="My mane is Janvi Kundan Yadav and my age is 21."
+count=0
+for ch in text:
+    if ch.isupper():
+        count+=1
+print(count)
+
+#count lowercase letters
+text="My mane is Janvi Kundan Yadav and my age is 21."
+count=0
+for ch in text:
+    if ch.islower():
+        count+=1
+print(count)
+
+#remove all spaces
+text="My mane is Janvi Kundan Yadav and my age is 21."
+print(text.replace(" ",""))
