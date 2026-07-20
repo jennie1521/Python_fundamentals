@@ -139,3 +139,63 @@ acc1=Account(40000,12345)
 acc1.credit(40000)
 acc1.debit(10000)
 acc1.get_bal()
+
+#INHERITANCE = when one class (child/derived) inherits the properties of another class (parent/base)
+#single inheritance = one child, one parent
+#Multi-level inheritance
+#multiple inheritance
+
+class Car:
+    @staticmethod
+    def start():
+        print("Car started..")
+    @staticmethod
+    def stop():
+        print("car stopped.")
+
+class Bmw(Car):
+    def __init__(self,name):
+        self.name=name
+car1=Bmw("M5")
+car2=Bmw("M4")
+
+print(car1.start())
+print(car1.stop())
+
+#qs3 multiple inheritance
+class A:
+    valA="Welcome to class A"
+
+class B:
+    valB="Welcome to class B"
+
+class C(A,B):
+    valC="Welcome to class C"
+
+c1=C()
+print(c1.valA)
+print(c1.valB)
+print(c1.valC)
+
+#super() method = used to access methods of the parent class
+class Car:
+    def __init__(self,type):
+        self.type=type
+
+    @staticmethod
+    def start():
+        print("Car started..")
+
+    @staticmethod
+    def stop():
+        print("car stopped.")
+
+class Bmw(Car):
+    def __init__(self,name,type):
+        super().__init__(type)
+        self.name=name
+        self.type=type
+        super().start()
+
+car1=Bmw("M5", "electric")
+print(car1.type)
