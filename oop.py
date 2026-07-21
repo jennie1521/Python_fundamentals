@@ -195,7 +195,32 @@ class Bmw(Car):
         super().__init__(type)
         self.name=name
         self.type=type
+
         super().start()
 
 car1=Bmw("M5", "electric")
 print(car1.type)
+
+#DECORATOR = function that takes another fuction as argument and return a function
+def decorator(func):
+    def wrapper():
+        print("Transaction Initiated...")
+        func()
+        print("Transaction completed.")
+
+def hello():
+    print("...executing all steps of transaction")
+
+hello1=decorator(hello)
+print(hello())
+
+#static method
+class Bank:
+    bank_name="sbi"
+    rate_of_interest=12.50
+    @staticmethod
+    def simple_interest(prin,n):
+        si=(prin*n*Bank.rate_of_interest)/100
+        print(si)
+
+si1=Bank.simple_interest(20000,2)
